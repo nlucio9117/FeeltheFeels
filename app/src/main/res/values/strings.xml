@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Feel the Feels Mood Assessment</string>
+    <string name="About">About</string>
+    <string name="message">Feel the Feels Mood Assessment App is meant to help the user identify
+        their mood only. Keeping track of your mood may help you to notice patterns or help you
+        make healthier lifestyle choices.\n\nTHIS APP IS NOT MEANT TO DIAGNOSE OR TREAT MOOD
+        DISORDERS.\n\nThis app was created by: Natasha Lucio
+    </string>
 </resources>
