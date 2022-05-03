@@ -1,5 +1,6 @@
 package com.example.feelthefeelsmoodassessment
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.feelthefeelsmoodassessment.databinding.ActivityMoodResultBinding
@@ -11,5 +12,9 @@ class MoodResultActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMoodResultBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+    var value = getIntent().getStringExtra("Black")
+
+
     }
 }
