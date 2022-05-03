@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity(),
   RadioGroup.OnCheckedChangeListener {
     private lateinit var binding: ActivityMainBinding
 
-    var color : String = ""
+   //var color : String = ""
     var summary : String  = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -54,31 +54,32 @@ class MainActivity : AppCompatActivity(),
 
 
     override fun onCheckedChanged(radioGroup: RadioGroup?, buttonId: Int) {
-        color = "Black"
-        summary = "A symbol of power and authority.\n" +
-                "\n" +
-                "Black is also used as a color of sophistication and elegance, often provoking emotions of mystery.\n" +
-                "\n" +
-                "Black is also associated with evil, taboo."
         if (buttonId == R.id.radioButton_mysterious) {
+            summary = "Black: " + "" +  "A symbol of power and authority.\n" +
+                    "\n" +
+                    "Black is also used as a color of sophistication and elegance, often provoking emotions of mystery.\n" +
+                    "\n" +
+                    "Black is also associated with evil, taboo."
             val intent = Intent(applicationContext, MoodResultActivity::class.java)
-            intent.putExtra("Black", "${color.toString()}")
             intent.putExtra("Summary", summary.toString())
             startActivity(intent)
 
-            Log.i("STATUS", "${color}")
             Log.i("STATUS", "${summary}")
-
-
         }
         if (buttonId == R.id.radioButton_depressed) {
-            color = "Blue"
             summary = "One of the must commonly used colors. Blue is the color of the sky and is often associated with tranquility, depth, honor, trusts and productivity. Blue is also said to decrease one's appetite.\n" +
                     "\n" +
                     "Acceptance, Authority, Balance, Calmness, Care, Caution, Cleanliness, Coolness, Cooperation, Compassion, Confidence, Contemplation, Culture, Depression, Despair, Depth, Dignity, Faith, Flexibility, Frankness, Freedom, Freshness, Goodness, Harmony, Honesty, Hope, Ice, Infinity, Intelligence, Introspection, Isolation, Law, Logic, Loyalty, Maturity, Obedience, Order, Peace, Piety, Power, Protection, Quality, Quietness, Reflection, Reliability, Responsibility, Sadness, Security, Self Control, Serenity, Sincerity, Solitude, Stability, Stiffness, Technology, Tenderness, Tradition, Tranquility, Transparency, Trust, Truth, Unity, Value, Virtue, Water."
+            val intent = Intent(applicationContext, MoodResultActivity::class.java)
+            intent.putExtra("Summary", summary.toString())
+            startActivity(intent)
+
+            Log.i("STATUS", "${summary}")
+
         }
+
         if (buttonId == R.id.radioButton_outdoorsy) {
-            color = "Brown"
+           // color = "Brown"
             summary = "Solid, dependable, and confident are often Traits attributed to brown. It can be though of as being both conventional and sophisticated depending on its intended use.\n" +
                     "\n" +
                     "Nature, Outdoorsy, Reliability, Ruggedness, Security, Support, Tough."
