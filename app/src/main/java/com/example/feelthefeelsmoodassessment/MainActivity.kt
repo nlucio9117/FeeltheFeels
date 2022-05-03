@@ -3,6 +3,7 @@ package com.example.feelthefeelsmoodassessment
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
@@ -11,7 +12,7 @@ import androidx.appcompat.app.AlertDialog
 import com.example.feelthefeelsmoodassessment.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(),
-  RadioGroup.OnCheckedChangeListener {//end of MainActivity
+  RadioGroup.OnCheckedChangeListener {
     private lateinit var binding: ActivityMainBinding
 
     var color : String = ""
@@ -22,8 +23,7 @@ class MainActivity : AppCompatActivity(),
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.radioGroupEmotions.setOnCheckedChangeListener(this)//pass listener object for Crust radiogroup
-
+        binding.radioGroupEmotions.setOnCheckedChangeListener(this)
         binding.buttonSubmit.setOnClickListener(SubmitListener())
     }
 
@@ -54,17 +54,21 @@ class MainActivity : AppCompatActivity(),
 
 
     override fun onCheckedChanged(radioGroup: RadioGroup?, buttonId: Int) {
+        color = "Black"
+        summary = "A symbol of power and authority.\n" +
+                "\n" +
+                "Black is also used as a color of sophistication and elegance, often provoking emotions of mystery.\n" +
+                "\n" +
+                "Black is also associated with evil, taboo."
         if (buttonId == R.id.radioButton_mysterious) {
             val intent = Intent(applicationContext, MoodResultActivity::class.java)
-            intent.putExtra("Black", color)
-            intent.putExtra("Summary", summary)
+            intent.putExtra("Black", "${color.toString()}")
+            intent.putExtra("Summary", summary.toString())
             startActivity(intent)
-            color = "Black"
-            summary = "A symbol of power and authority.\n" +
-                    "\n" +
-                    "Black is also used as a color of sophistication and elegance, often provoking emotions of mystery.\n" +
-                    "\n" +
-                    "Black is also associated with evil, taboo."
+
+            Log.i("STATUS", "${color}")
+            Log.i("STATUS", "${summary}")
+
 
         }
         if (buttonId == R.id.radioButton_depressed) {

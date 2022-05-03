@@ -13,7 +13,9 @@ class MoodResultActivity : AppCompatActivity() {
         binding = ActivityMoodResultBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-    var value = getIntent().getStringExtra("Black")
+    val intentValue = intent.getStringExtra("Summary")
+
+        binding.editTextSummary.setText(intentValue)
 
 
     }
