@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#0FFFFFFF"
     tools:context=".MainActivity">
 
     <TextView
@@ -21,8 +22,8 @@
         android:id="@+id/imageView"
         android:layout_width="79dp"
         android:layout_height="91dp"
-        android:layout_marginTop="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/tragedy_mask" />
@@ -46,4 +47,80 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="How are you feeling today?"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/radioButton_mysterious"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+    </RadioGroup>
+
+    <RadioButton
+        android:id="@+id/radioButton_mysterious"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mysterious"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <RadioButton
+        android:id="@+id/radioButton_depressed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Depressed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton_mysterious" />
+
+    <RadioButton
+        android:id="@+id/radioButton_outdoorsy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Outdoorsy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton_depressed" />
+
+    <RadioButton
+        android:id="@+id/radioButton_excited"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Excited"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton_outdoorsy" />
+
+    <RadioButton
+        android:id="@+id/radioButton_nurturing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nurturing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton_excited" />
+
+    <RadioButton
+        android:id="@+id/radioButton_spiritual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spiritual"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton_nurturing" />
+
+    <RadioButton
+        android:id="@+id/radioButton_dangerous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dangerous"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton_spiritual" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

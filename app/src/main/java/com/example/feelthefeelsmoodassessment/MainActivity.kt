@@ -30,8 +30,8 @@ class MainActivity : AppCompatActivity() {
             builder.setMessage(R.string.message)
             builder.setPositiveButton(android.R.string.ok, null)
             builder.show()
-        }
+        }//end if statement
         return super.onOptionsItemSelected(item)
-    }
+    }//end of onOptionsItemSelected
 
-}
+}//end of MainActivity
