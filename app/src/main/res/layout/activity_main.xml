@@ -80,12 +80,12 @@
         app:layout_constraintTop_toBottomOf="@+id/textView_question">
 
         <RadioButton
-            android:id="@+id/radioButton_mysterious"
+            android:id="@+id/radioButton_evil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:buttonTint="@color/teal_700"
-            android:text="Mysterious"
+            android:text="Evil"
             android:textSize="20sp" />
 
         <RadioButton
@@ -97,11 +97,11 @@
             android:textSize="20sp" />
 
         <RadioButton
-            android:id="@+id/radioButton_outdoorsy"
+            android:id="@+id/radioButton_tough"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:buttonTint="@color/teal_700"
-            android:text="Outdoorsy"
+            android:text="Tough"
             android:textSize="20sp" />
 
         <RadioButton
