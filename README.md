@@ -1,5 +1,9 @@
 # FeeltheFeels
 
+To use this app, select one emotion/mood from the options listed. Once an emotion/mood is chosen, a mood summary
+will be provided on the following page with an associated emoji and color. A brief description of the mood will be
+provided along with similar emotions/moods associated with the mood color. 
+
 Feel the Feels Mood Assessment App is meant to help the user identify
 their mood only. Keeping track of your mood may help you to notice patterns or help you
 make healthier lifestyle choices.THIS APP IS NOT MEANT TO DIAGNOSE OR TREAT MOOD
