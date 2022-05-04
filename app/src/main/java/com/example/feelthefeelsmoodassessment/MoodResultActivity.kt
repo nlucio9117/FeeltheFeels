@@ -1,5 +1,10 @@
 package com.example.feelthefeelsmoodassessment
 
+//Author: Natasha Lucio
+//Course: CSCI 4020-W1
+//Date: 4 May 2022
+//Task: Final Project - Mood Result Activity
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -16,7 +21,7 @@ class MoodResultActivity : AppCompatActivity() {
         binding = ActivityMoodResultBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-    val intentValue = intent.getStringExtra("Summary")
+        val intentValue = intent.getStringExtra("Summary")
 
         binding.editTextSummary.setText(intentValue)
     }
@@ -37,4 +42,5 @@ class MoodResultActivity : AppCompatActivity() {
         }//end if statement
         return super.onOptionsItemSelected(item)
     }//end of onOptionsItemSelected
-}
+
+}// end of MoodResultActivity

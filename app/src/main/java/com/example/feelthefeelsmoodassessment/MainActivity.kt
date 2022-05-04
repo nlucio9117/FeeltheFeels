@@ -1,5 +1,10 @@
 package com.example.feelthefeelsmoodassessment
 
+//Author: Natasha Lucio
+//Course: CSCI 4020-W1
+//Date: 4 May 2022
+//Task: Final Project - Main Activity
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -146,7 +151,7 @@ class MainActivity : AppCompatActivity(),
             summary = "Associated Emoji: \uD83D\uDE10\n\n" +"Associated Color: Gray\n\n" + "Pure gray is the only color that has no direct psychological properties. " +
                     "It is, however, quite suppressive. A virtual absence of color is depressing and when the world " +
                     "turns gray we are instinctively conditioned to draw in and prepare for hibernation. Unless the precise " +
-                    "tone is right, gray has a dampening effect on other colors used with it. Heavy use of grey usually indicates " +
+                    "tone is right, gray has a dampening effect on other colors used with it. Heavy use of gray usually indicates " +
                     "a lack of confidence and fear of exposure.\n\n" + "Positive: Psychological neutrality.\n\n" +
                     "Negative: Lack of confidence, dampness, depression, hibernation, lack of energy."
 
