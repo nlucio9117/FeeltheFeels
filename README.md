@@ -2,7 +2,7 @@
 Mood Assessment App
 Feel the Feels Mood Assessment App is meant to help the user identify
 their mood only. Keeping track of your mood may help you to notice patterns or help you
-make healthier lifestyle choices.\n\nTHIS APP IS NOT MEANT TO DIAGNOSE OR TREAT MOOD
+make healthier lifestyle choices.THIS APP IS NOT MEANT TO DIAGNOSE OR TREAT MOOD
 DISORDERS.
 **Tragedy mask images provided by https://openclipart.org/detail/282008/comedy-and-tragedy-masks**
 **Emoji images provided by https://getemoji.com/**
