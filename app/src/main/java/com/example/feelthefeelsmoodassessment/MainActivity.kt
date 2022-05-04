@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity(),
 
     override fun onCheckedChanged(radioGroup: RadioGroup?, buttonId: Int) {
         if (buttonId == R.id.radioButton_mysterious) {
-            summary = "Black:\n\n" + "A symbol of power and authority.\n\n" +
+            summary = "Emotion: \n\n" + "Color: Black\n\n" + "A symbol of power and authority.\n\n" +
                     "Black is also used as a color of sophistication and elegance, often provoking emotions of mystery.\n\n" +
                     "Black is also associated with evil, taboo."
             val intent = Intent(applicationContext, MoodResultActivity::class.java)
