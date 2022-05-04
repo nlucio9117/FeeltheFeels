@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
 import android.widget.RadioGroup
 import androidx.appcompat.app.AlertDialog
 import com.example.feelthefeelsmoodassessment.databinding.ActivityMainBinding
@@ -23,7 +22,6 @@ class MainActivity : AppCompatActivity(),
         setContentView(binding.root)
 
         binding.radioGroupEmotions.setOnCheckedChangeListener(this)
-        binding.buttonSubmit.setOnClickListener(SubmitListener())
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -42,13 +40,6 @@ class MainActivity : AppCompatActivity(),
         }//end if statement
         return super.onOptionsItemSelected(item)
     }//end of onOptionsItemSelected
-
-    inner class SubmitListener : View.OnClickListener {
-        override fun onClick(p0: View?) {
-            val intent = Intent(applicationContext, MoodResultActivity::class.java)
-            startActivity(intent)
-        }
-    }//end of inner class
 
     override fun onCheckedChanged(radioGroup: RadioGroup?, buttonId: Int) {
         if (buttonId == R.id.radioButton_mysterious) {
