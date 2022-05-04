@@ -1,5 +1,5 @@
 # FeeltheFeels
-Mood Assessment App
+
 Feel the Feels Mood Assessment App is meant to help the user identify
 their mood only. Keeping track of your mood may help you to notice patterns or help you
 make healthier lifestyle choices.THIS APP IS NOT MEANT TO DIAGNOSE OR TREAT MOOD
