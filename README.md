@@ -9,6 +9,11 @@ their mood only. Keeping track of your mood may help you to notice patterns or h
 make healthier lifestyle choices.THIS APP IS NOT MEANT TO DIAGNOSE OR TREAT MOOD
 DISORDERS.
 
+## Platform
+
+This app runs on Android Studio
+
+## Sources 
 **Tragedy mask images provided by https://openclipart.org/detail/282008/comedy-and-tragedy-masks**
 
 **Emoji images provided by https://getemoji.com/**
