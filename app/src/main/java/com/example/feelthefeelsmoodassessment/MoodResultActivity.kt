@@ -18,5 +18,6 @@ class MoodResultActivity : AppCompatActivity() {
         binding.editTextSummary.setText(intentValue)
 
 
+
     }
 }

@@ -16,7 +16,7 @@
         android:shadowColor="@color/purple_200"
         android:shadowDx="-2"
         android:shadowDy="-2"
-        android:shadowRadius="1"
+        android:shadowRadius="2"
         android:text="Feel the Feels "
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -50,7 +50,7 @@
         android:shadowColor="@color/purple_200"
         android:shadowDx="-2"
         android:shadowDy="2"
-        android:shadowRadius="1"
+        android:shadowRadius="2"
         android:text="Mood Assessment"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -63,6 +63,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
+        android:shadowColor="@color/teal_700"
+        android:shadowDx="-2"
+        android:shadowDy="-2"
+        android:shadowRadius="1"
         android:text="How are you feeling today?"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -79,6 +83,8 @@
             android:id="@+id/radioButton_mysterious"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:buttonTint="@color/teal_700"
             android:text="Mysterious"
             android:textSize="20sp" />
 
@@ -86,6 +92,7 @@
             android:id="@+id/radioButton_depressed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="@color/teal_700"
             android:text="Depressed"
             android:textSize="20sp" />
 
@@ -93,6 +100,7 @@
             android:id="@+id/radioButton_outdoorsy"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="@color/teal_700"
             android:text="Outdoorsy"
             android:textSize="20sp" />
 
@@ -100,6 +108,7 @@
             android:id="@+id/radioButton_excited"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="@color/teal_700"
             android:text="Excited"
             android:textSize="20sp" />
 
@@ -107,6 +116,7 @@
             android:id="@+id/radioButton_nurturing"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="@color/teal_700"
             android:text="Nurturing"
             android:textSize="20sp" />
 
@@ -114,6 +124,7 @@
             android:id="@+id/radioButton_spiritual"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="@color/teal_700"
             android:text="Spiritual"
             android:textSize="20sp" />
 
@@ -121,6 +132,7 @@
             android:id="@+id/radioButton_dangerous"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="@color/teal_700"
             android:text="Dangerous"
             android:textSize="20sp" />
 
@@ -128,6 +140,7 @@
             android:id="@+id/radioButton_indifferent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="@color/teal_700"
             android:text="Indifferent"
             android:textSize="20sp" />
 

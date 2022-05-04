@@ -67,7 +67,6 @@ class MainActivity : AppCompatActivity(),
             startActivity(intent)
 
             Log.i("STATUS", "${summary}")
-
         }
 
         if (buttonId == R.id.radioButton_outdoorsy) {
@@ -157,9 +156,6 @@ class MainActivity : AppCompatActivity(),
 
             Log.i("STATUS", "${summary}")
         }
+    }//end of onCheckedChanged
 
-
-
-    }
-
-}
+}//end of MainActivity
